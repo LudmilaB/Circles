@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Shapes Mania</title> 
+<link type="text/css" rel="stylesheet" href="css/main.css" />
+
+<meta charset="utf-8">
+<meta name="keywords" content="puzzles, puzzle games, free, online games, free games, free online games, free puzzle games">
+
+</head>
+<body  onunload="Close()">
+<div class="container">
+
+ <h2 class="title_sm"><span class="red">F</span><span class="green">i</span><span class="orange">t<span class="blue"> C</span><span class="red">i</span><span class="green">r</span><span class="orange">c<span class="blue">l</span><span class="red">e</span><span class="green">s</span></h2>
+ <h3>Insert maximum number of circles</h3>
+
+<table class="heading">
+  <tbody>
+     <tr>
+      <td><button id="restart-button" onclick="StartGame()" type ="button">New Game</button></td>	  
+	  <td id="score_td">
+        <div id="score-container">0</div>
+        <div id="best-container">0</div>
+      </td>      
+    </tr>
+</tbody>
+</table>
+<div id="canvasContainer"><canvas id="myCanvas" width="500" height="500" onclick="startCircle(event)"></canvas>
+ <div class="game-message">
+        <div><p></p></div>
+        <div class="lower">
+	        <button id ="keep-playing-button" onClick="ContinueGame()" >Continue</button>
+            <button id ="retry-button" onclick="StartGame()">Try again</button>
+			
+      </div>
+</div>
+<p class="game-explanation"><b>HOW TO PLAY:</b> Click on empty space to grow a new circle.  If the new circle touches an existing circle of same color, they both disappear.  If they have different colors, both stay.  If the new circle cannot fit, a minimal dotted outline is shown.  After 3 such misfits in a row, the game is over. If you click inside a standalone circle, it will grow more.</p>
+<div id="bottom">© Shapes Mania</div>
+</div>
+</div>
+
+<script src="js/general.js"></script>
+<script src="js/circles.js"></script>
+<script src="js/ShapesGames.js"></script>
+ </body>
+</html>
