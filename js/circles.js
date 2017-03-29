@@ -1,4 +1,5 @@
- 	  var best=getCookie("best-circles");
+ //	  var best=getCookie("best-circles");
+      var best=window.localStorage.getItem("best-circles");
 	  document.getElementById('best-container').innerHTML=best;
 
  	 function StartGame(){
@@ -12,7 +13,9 @@
 	  mistakes=0;
 	  score=0;
 	  level=1;
-	  setCookie("best-circles", best,180 );
+//	  setCookie("best-circles", best,180 );
+	  window.localStorage.setItem("best-circles", "best");
+
 	  document.getElementById('best-container').innerHTML=best;
 	  document.getElementById('score-container').innerHTML=0;
 	  Start=true;	
@@ -88,7 +91,8 @@
 			if (mistakes==3)
 			{
 			   Start=false;
-			   setCookie("best-circles", best,180 );
+	//		   setCookie("best-circles", best,180 );
+			   window.localStorage.setItem("best-circles", "best");
 			   clearInterval(interv);
 			   messageContainer = document.querySelector(".game-message");
 			   messageContainer.classList.add("game-over");
@@ -193,6 +197,7 @@
 	 
 	function Close(){
 	
-	setCookie("best-circles", best,180 );	
+//	setCookie("best-circles", best,180 );	
+	window.localStorage.setItem("best-circles", "best");
 }	
 
