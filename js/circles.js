@@ -117,6 +117,7 @@
 	   {
 	     best=score;
 	     document.getElementById('best-container').innerHTML= best;
+		 window.localStorage.setItem("best-circles", best)
 		}
 		if (newlevel>level){
 			level=newlevel;
