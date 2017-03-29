@@ -78,3 +78,12 @@
 			return i+1;	     
 	  return len+1;		
 	}
+	
+	function RemoveMessage()
+	{
+		
+	  messageContainer = document.querySelector(".game-message");
+	  messageContainer.classList.remove("game-over");
+      messageContainer.classList.remove("game-continue");  
+		
+	}

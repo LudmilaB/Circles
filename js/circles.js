@@ -1,4 +1,4 @@
- //	  var best=getCookie("best-circles");
+ 
       var best=window.localStorage.getItem("best-circles");
 	  if(!best)
 		  best=0;
@@ -15,8 +15,6 @@
 	  mistakes=0;
 	  score=0;
 	  level=1;
-//	  setCookie("best-circles", best,180 );
-	  window.localStorage.setItem("best-circles", best);
 
 	  document.getElementById('best-container').innerHTML=best;
 	  document.getElementById('score-container').innerHTML=0;
@@ -93,8 +91,6 @@
 			if (mistakes==3)
 			{
 			   Start=false;
-	//		   setCookie("best-circles", best,180 );
-			   window.localStorage.setItem("best-circles", best);
 			   clearInterval(interv);
 			   messageContainer = document.querySelector(".game-message");
 			   messageContainer.classList.add("game-over");
@@ -127,15 +123,7 @@
             messageContainer.getElementsByTagName("p")[0].textContent =txt;
 			ShareScore();
 		}
-/*		var len=scoreLevels.length;
-		for (var i=0; i<len; i++)
-			if(score==scoreLevels[i])
-            {
-              messageContainer = document.querySelector(".game-message");
-              messageContainer.classList.add("game-continue");
-			  var txt = "Conratulations! You've reached level "+ (i+2) +" !"
-              messageContainer.getElementsByTagName("p")[0].textContent =txt;
-            }   */
+
 	 }
 	 
 	 function PointInsideCircles(x,y){
@@ -149,7 +137,6 @@
 	   if(circle.ct_x-circle.r < 0 || circle.ct_x+circle.r >canvas.width 
   	   || circle.ct_y-circle.r < 0 || circle.ct_y+circle.r >canvas.height)
 		   return false;
-//		console.log("true");
 		return true
 	 }
 	 function CirclesIntersect(circle){	 
@@ -197,11 +184,5 @@
         context.fill(); 
 		 
 	 }
-	 
-	function Close(){
-	
-//	setCookie("best-circles", best,180 );
- //   alert("function Close()");	
-	window.localStorage.setItem("best-circles", best);
-}	
+	 	
 
