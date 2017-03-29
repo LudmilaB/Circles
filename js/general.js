@@ -25,8 +25,9 @@
     }
 	
 	
-	window.onbeforeunload = function (e) {
-	  setCookie("best-container", best,180 );	
+	window.onbeforeunload = function () {
+//	  setCookie("best-container", best,180 );
+      window.localStorage.setItem("best-circles", best);	
 	}
 	
      function RemoveMessage()

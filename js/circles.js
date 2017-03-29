@@ -1,5 +1,7 @@
  //	  var best=getCookie("best-circles");
       var best=window.localStorage.getItem("best-circles");
+	  if(!best)
+		  best=0;
 	  document.getElementById('best-container').innerHTML=best;
 
  	 function StartGame(){
@@ -197,7 +199,8 @@
 	 
 	function Close(){
 	
-//	setCookie("best-circles", best,180 );	
+//	setCookie("best-circles", best,180 );
+ //   alert("function Close()");	
 	window.localStorage.setItem("best-circles", best);
 }	
 
