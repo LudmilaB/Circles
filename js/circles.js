@@ -29,14 +29,15 @@
     	 {
           if(shapes[i].growing)
 		  {
-    		 for (var j=0; j<shapes.length; j++ )
+			 if(!CircleInsideCanvas(shapes[i],canvas))
 			 {
-    		     if(!CircleInsideCanvas(shapes[i],canvas))
-				 {
     		        shapes[i].growing=false;
     				break;
-    			 }
-    		     else if(i!=j && CirclesTouch(shapes[i],shapes[j]))
+    		 }
+    		 for (var j=0; j<shapes.length; j++ )
+			 {
+    		     
+    		     if(i!=j && CirclesTouch(shapes[i],shapes[j]))
 				 {
 					 if (shapes[i].clr===shapes[j].clr)// delete shapes if they are the same color
 					 {
@@ -52,9 +53,9 @@
 					 }
 					 else
     			        shapes[i].growing=shapes[j].growing=false;
-    				 break;  //contiue to search other circles that touch circle i
+    			//	 break;  //contiue to search other circles that touch circle i
     			 }
-    			}
+    		}
     		 if(shapes[i].growing)
 			 {
 			    shapes[i].r=shapes[i].r+1;
