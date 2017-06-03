@@ -33,9 +33,10 @@ html, body {
  h3 {
   font-weight: bold;
   margin: 0;
+  display: block;
   text-align: center;
   color: #24328c;
-  font-size: 20px;
+  font-size: 25px;
    }
    
   h2.title , h2.title_sm{
@@ -115,7 +116,7 @@ html, body {
    #restart-button{float: left;}
   
 .game-explanation {
-  margin-top: 10px; }
+  margin-top: 30px; }
 
 
 hr {
@@ -181,25 +182,29 @@ margin-left: 10px;
 	width:100%;	
   }
   
-   h3{ font-size: 20px;}
+   h3{ font-size: 22px;}
 }
 
 @media screen and (max-height: 768px) and (min-width: 481px) {
 	
 .container{
-  max-width: 400px;
+  max-width: 450px;
 }  
 }
 @media(max-width: 520px) {
 
 
 .container{
-max-width:360px;
+margin-left:10px;
+margin-right:10px;
 }	
 #myCanvas,.main_game{
    margin-top: 2px;
 }
 
+  h1.title{
+    font-size: 60px;
+ }
  h3{ font-size: 18px;}
 
 	
@@ -208,7 +213,10 @@ body {
 
 #restart-button ,#retry-button ,#keep-playing-button{
     padding: 0 14px;
-	}  
+	}
+.game-explanation {
+  margin-top: 15px; }
+  
 .heading {
     border-spacing: 0;
   }
@@ -224,16 +232,16 @@ body {
 
   @media (max-width: 380px) {	  
 
-.container{
-max-width:360px;
-margin-left:10px;
-margin-right:10px;
-}
   html, body {
     font-size: 15px; }
 
+ /* body {
+    margin: 20px 0;
+    padding: 0 20px; } */
 
-
+  h1.title {
+    font-size: 45px;
+    margin-top: 15px; }
  h3{ font-size: 14px;}
 
 .score-container:after, .best-container:after {
@@ -249,5 +257,13 @@ margin-right:10px;
 }
 	
 
+
+ /* .game-message p {
+    font-size: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    margin-top: 90px !important; }
+  .game-message .lower {
+    margin-top: 30px !important; }*/ 
 	} 
 	

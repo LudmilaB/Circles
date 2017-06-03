@@ -8,7 +8,7 @@
 	  var context = canvas.getContext('2d');
 	  var Start=true;
 	  var level=1; 
-      var scoreLevels=[100,600, 1200, 2000, 3000];
+      var scoreLevels=[100,400, 1000, 2000, 3000];
 	  var interv;	 
 	  
 	  function shape(ct_x, ct_y,type){

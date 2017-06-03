@@ -32,7 +32,7 @@
 			 if(!CircleInsideCanvas(shapes[i],canvas))
 			 {
     		        shapes[i].growing=false;
-    				break;
+    			//	break;
     		 }
     		 for (var j=0; j<shapes.length; j++ )
 			 {
