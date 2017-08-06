@@ -21,7 +21,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: rgb(239, 239, 239);
+  background: #a0b9fd;
   color: #5a5855;
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
@@ -30,12 +30,14 @@ html, body {
 .heading{
   width: 100%;
   }
+
  h3 {
   font-weight: bold;
   margin: 0;
   text-align: center;
   color: #24328c;
   font-size: 20px;
+
    }
    
   h2.title , h2.title_sm{
@@ -44,6 +46,7 @@ html, body {
   font-size:36px;
    color: MediumBlue;
    }
+   
    h2.title_sm{margin:0;}
   
 .red{color:red;}  
@@ -192,14 +195,14 @@ margin-left: 10px;
 }
 @media(max-width: 520px) {
 
-
 .container{
 max-width:360px;
-}	
+} 
 #myCanvas,.main_game{
    margin-top: 2px;
 }
 
+ 
  h3{ font-size: 18px;}
 
 	
@@ -208,7 +211,8 @@ body {
 
 #restart-button ,#retry-button ,#keep-playing-button{
     padding: 0 14px;
-	}  
+	}
+  
 .heading {
     border-spacing: 0;
   }
@@ -222,17 +226,18 @@ body {
 }
 
 
-  @media (max-width: 380px) {	  
+  @media (max-width: 380px) {
 
 .container{
 max-width:360px;
 margin-left:10px;
 margin-right:10px;
-}
+}  
+
   html, body {
     font-size: 15px; }
 
-
+ 
 
  h3{ font-size: 14px;}
 

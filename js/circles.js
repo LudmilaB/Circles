@@ -122,7 +122,7 @@
             messageContainer.classList.add("game-continue");
 			var txt = "Conratulations! You've reached level "+ level +" !"
             messageContainer.getElementsByTagName("p")[0].textContent =txt;
-			ShareScore();
+	//		ShareScore();
 		}
 
 	 }
