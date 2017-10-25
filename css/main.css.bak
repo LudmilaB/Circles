@@ -21,7 +21,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: rgb(239, 239, 239);
+  background: #a0b9fd;
   color: #5a5855;
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
@@ -30,13 +30,14 @@ html, body {
 .heading{
   width: 100%;
   }
+
  h3 {
   font-weight: bold;
   margin: 0;
-  display: block;
   text-align: center;
   color: #24328c;
-  font-size: 25px;
+  font-size: 20px;
+
    }
    
   h2.title , h2.title_sm{
@@ -45,6 +46,7 @@ html, body {
   font-size:36px;
    color: MediumBlue;
    }
+   
    h2.title_sm{margin:0;}
   
 .red{color:red;}  
@@ -116,7 +118,7 @@ html, body {
    #restart-button{float: left;}
   
 .game-explanation {
-  margin-top: 30px; }
+  margin-top: 10px; }
 
 
 hr {
@@ -182,29 +184,25 @@ margin-left: 10px;
 	width:100%;	
   }
   
-   h3{ font-size: 22px;}
+   h3{ font-size: 20px;}
 }
 
 @media screen and (max-height: 768px) and (min-width: 481px) {
 	
 .container{
-  max-width: 450px;
+  max-width: 400px;
 }  
 }
 @media(max-width: 520px) {
 
-
 .container{
-margin-left:10px;
-margin-right:10px;
-}	
+max-width:360px;
+} 
 #myCanvas,.main_game{
    margin-top: 2px;
 }
 
-  h1.title{
-    font-size: 60px;
- }
+ 
  h3{ font-size: 18px;}
 
 	
@@ -214,8 +212,6 @@ body {
 #restart-button ,#retry-button ,#keep-playing-button{
     padding: 0 14px;
 	}
-.game-explanation {
-  margin-top: 15px; }
   
 .heading {
     border-spacing: 0;
@@ -230,18 +226,19 @@ body {
 }
 
 
-  @media (max-width: 380px) {	  
+  @media (max-width: 380px) {
+
+.container{
+max-width:360px;
+margin-left:10px;
+margin-right:10px;
+}  
 
   html, body {
     font-size: 15px; }
 
- /* body {
-    margin: 20px 0;
-    padding: 0 20px; } */
+ 
 
-  h1.title {
-    font-size: 45px;
-    margin-top: 15px; }
  h3{ font-size: 14px;}
 
 .score-container:after, .best-container:after {
@@ -257,13 +254,5 @@ body {
 }
 	
 
-
- /* .game-message p {
-    font-size: 30px !important;
-    height: 30px !important;
-    line-height: 30px !important;
-    margin-top: 90px !important; }
-  .game-message .lower {
-    margin-top: 30px !important; }*/ 
 	} 
 	
