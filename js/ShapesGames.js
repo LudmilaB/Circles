@@ -11,10 +11,10 @@
       var scoreLevels=[100,400, 1000, 2000, 3000];
 	  var interv;
 
-	  var swooshSound = new sound("/sounds/menu-button-click-switch-01.mp3");
-	  var mistakeSound = new sound("/sounds/notification-alert-95.mp3");
-	  var endOfGameSound = new sound("/sounds/correct-answer-bell-gliss-01.mp3");
-	  var newLevelSound = new sound("/sounds/correct-answer-bell-gliss-04.mp3");	  
+	  var swooshSound = new sound("sounds/menu-button-click-switch-01.mp3");
+	  var mistakeSound = new sound("sounds/notification-alert-95.mp3");
+	  var endOfGameSound = new sound("sounds/correct-answer-bell-gliss-01.mp3");
+	  var newLevelSound = new sound("sounds/correct-answer-bell-gliss-04.mp3");	  
 	  
 	  function shape(ct_x, ct_y,type){
 		this.type=type;
