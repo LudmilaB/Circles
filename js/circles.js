@@ -41,8 +41,8 @@
 				 {
 					 if (shapes[i].clr===shapes[j].clr)// delete shapes if they are the same color
 					 {
-					    DrawCircle(shapes[i]);
-						DrawCircle(shapes[j]);
+		//			    DrawCircle(shapes[i]);
+		//				DrawCircle(shapes[j]);
 						shapes.splice(i,1);
 						if(i<j)
 						  shapes.splice(j-1,1);
@@ -73,8 +73,8 @@
 	 function startCircle(event){
 	   if(!Start)
 	      return;
-	   swooshSound.play(); //without that doesn't work on mobile
-	   swooshSound.stop();//
+	  // swooshSound.play(); //without that doesn't work on mobile
+	  // swooshSound.stop();//
 	   var rect = canvas.getBoundingClientRect();
        var x=(event.clientX-rect.left)/(rect.width)*canvas.width;
        var y= (event.clientY-rect.top)/(rect.height)*canvas.height;
@@ -82,8 +82,6 @@
 	   if ((i=PointInsideCircles(x,y)) !=-1)   // regraw old circle
 		{
 			shapes[i].growing=true;
-		//	swooshSound.play(); //without that doesn't work on mobile
-	    //    swooshSound.stop();//
 			interv=setInterval(draw, 1000/30);
 			return;
 		}
